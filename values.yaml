@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: mongo
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  nodePort: 32017
+
+persistence:
+  enabled: true
+  storageClass: "-"
+  accessMode: ReadWriteOnce
+  size: 16Gi
