@@ -11,6 +11,7 @@ service:
 
 persistence:
   enabled: true
-  storageClass: "-"
+  storageClass: "standard"
   accessMode: ReadWriteOnce
-  size: 16Gi
+  size: 8Gi
+
