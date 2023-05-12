@@ -15,3 +15,7 @@ persistence:
   accessMode: ReadWriteOnce
   size: 8Gi
 
+mongodb:
+  username: myuser
+  password: mypassword
+  database: mydatabase
