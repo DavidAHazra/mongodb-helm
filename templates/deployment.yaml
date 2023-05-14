@@ -20,9 +20,15 @@ spec:
             - containerPort: 27017
           env:
             - name: MONGO_INITDB_ROOT_USERNAME
-              value: {{ .Values.mongodb.username }}
+              valueFrom:
+                secretKeyRef:
+                  name: mongodb-login-secret
+                  key: username
             - name: MONGO_INITDB_ROOT_PASSWORD
-              value: {{ .Values.mongodb.password }}
+              valueFrom:
+                secretKeyRef:
+                  name: mongodb-login-secret
+                  key: password
           volumeMounts:
             - name: mongo-storage
               mountPath: /data/db
