@@ -5,8 +5,9 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: 27017
+    - protocol: TCP
+      port: 27017
       targetPort: 27017
-      targetPort: {{ .Values.service.nodePort }}
+      nodePort: {{ .Values.service.nodePort }}
   selector:
     app: mongodb
