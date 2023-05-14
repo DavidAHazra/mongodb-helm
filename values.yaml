@@ -18,4 +18,3 @@ persistence:
 mongodb:
   username: myuser
   password: mypassword
-  database: mydatabase
