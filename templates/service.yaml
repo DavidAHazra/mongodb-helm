@@ -7,6 +7,6 @@ spec:
   ports:
     - port: 27017
       targetPort: 27017
-      targetPort: {{ .Values.service.nodePort}}
+      targetPort: {{ .Values.service.nodePort }}
   selector:
     app: mongodb

@@ -6,7 +6,8 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  nodePort: 32017
+  type: NodePort
+  nodePort: 32000
 
 persistence:
   enabled: true
