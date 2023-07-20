@@ -5,7 +5,7 @@ image:
 
 service:
   type: NodePort
-  nodePort: 36925
+  nodePort: 31001
 
 persistence:
   enabled: true
