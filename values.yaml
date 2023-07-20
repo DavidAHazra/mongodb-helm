@@ -5,13 +5,13 @@ image:
 
 service:
   type: NodePort
-  nodePort: 32017
+  nodePort: 36925
 
 persistence:
   enabled: true
   storageClass: microk8s-hostpath
   accessMode: ReadWriteOnce
-  size: 8Gi
+  size: 50Gi
 
 mongodb:
   username: myuser
